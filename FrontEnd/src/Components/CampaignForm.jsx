@@ -48,7 +48,7 @@ const CampaignForm = ({ onCreate, onAnalyze }) => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-xl border border-gray-200">
+    <div className=" mx-auto p-6 bg-white rounded-lg shadow-xl border border-gray-200">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">
         {mode === 'create' ? 'Create New Campaign' : 'Analyze Proposal'}
       </h2>

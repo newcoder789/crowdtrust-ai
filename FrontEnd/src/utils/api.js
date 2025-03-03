@@ -1,7 +1,7 @@
 export async function analyzeCampaign(formData) {
   console.log("Sending to /analyze:", Object.fromEntries(formData.entries()));
   try {
-    const response = await fetch('http://localhost:5000/analyze', {
+    const response = await fetch('http://127.0.0.1:5001/analyze', {
       method: 'POST',
       body: formData, // FormData handles multipart/form-data automatically
     });
@@ -33,7 +33,7 @@ export async function analyzeCampaign(formData) {
   export async function createCampaign(formData) {
   console.log("Sending to /create_campaign:", Object.fromEntries(formData.entries()));
   try {
-    const response = await fetch('http://localhost:5000/create_campaign', {
+    const response = await fetch('http://127.0.0.1:5001/create_campaign', {
       method: 'POST',
       body: formData,
     });

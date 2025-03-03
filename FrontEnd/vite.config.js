@@ -11,7 +11,11 @@ export default defineConfig({
         target: 'http://localhost:5000',
         changeOrigin: true,
         secure: false,
-      },
+      },'/analyze': {
+          target: 'http://localhost:5000',
+          changeOrigin: true,
+          secure: false,
+        },
     },
   },
   plugins: [react(), tailwindcss()],

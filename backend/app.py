@@ -21,7 +21,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # MongoDB setup
-client = MongoClient('mongodb+srv://iamlearning:4myself784378@aryan0.xzmhc.mongodb.net/crowdtrust_ai')
+client = MongoClient(os.getenv("MONGODB_URI"))
 db = client['crowdtrust_ai']
 campaigns_collection = db['campaigns']
 fraud_reports_collection = db['fraud_reports']

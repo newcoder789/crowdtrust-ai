@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-const uri = 'mongodb+srv://iamlearning:4myself784378@aryan0.xzmhc.mongodb.net/crowdtrust_ai';
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
 async function uploadCampaign(campaign) {

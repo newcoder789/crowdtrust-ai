@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from datetime import datetime
 
-URI = 'mongodb+srv://iamlearning:4myself784378@aryan0.xzmhc.mongodb.net/crowdtrust_ai'
+URI = os.getenv("MONGODB_URI")
 
 def seed_data():
     client = MongoClient(URI)
